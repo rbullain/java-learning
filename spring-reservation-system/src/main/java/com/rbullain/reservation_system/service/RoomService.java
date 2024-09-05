@@ -6,6 +6,7 @@ import com.rbullain.reservation_system.exceptions.RoomNotFoundException;
 import com.rbullain.reservation_system.model.RoomModel;
 import com.rbullain.reservation_system.repository.IRoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,7 +17,7 @@ public class RoomService {
     private final IRoomRepository roomRepository;
 
     @Autowired
-    public RoomService(IRoomRepository roomRepository) {
+    public RoomService(@Qualifier("hashMapRoomRepository") IRoomRepository roomRepository) {
         this.roomRepository = roomRepository;
     }
 

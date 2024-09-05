@@ -1,6 +1,7 @@
 package com.rbullain.reservation_system.repository;
 
 import com.rbullain.reservation_system.model.RoomModel;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
@@ -10,7 +11,6 @@ import java.util.Map;
 import java.util.Optional;
 
 @Repository
-@Profile("hashmap")
 public class HashMapRoomRepository implements IRoomRepository {
     Map<Long, RoomModel> rooms = new HashMap<>();
 

@@ -12,8 +12,6 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-@Primary
-@Profile("database")
 public class DatabaseRoomRepository implements IRoomRepository {
     private final JpaRoomRepository jpaRepository;
 

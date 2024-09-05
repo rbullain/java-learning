@@ -3,8 +3,10 @@ package com.rbullain.reservation_system.model;
 import com.rbullain.reservation_system.entity.Room;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
 public class RoomModel {
     Long id;
