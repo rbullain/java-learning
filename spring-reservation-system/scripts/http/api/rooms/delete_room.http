@@ -1,0 +1,2 @@
+### Delete a room by id
+DELETE localhost:8080/api/rooms/1

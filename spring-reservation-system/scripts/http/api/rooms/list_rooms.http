@@ -1,0 +1,2 @@
+### List all the rooms
+GET localhost:8080/api/rooms
